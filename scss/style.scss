@@ -1,0 +1,892 @@
+@font-face {
+	font-family: 'KZ Taurus';
+	src: url('../fonts/kz_taurus.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/kz_taurus.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/kz_taurus.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/kz_taurus.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/kz_taurus.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/kz_taurus.svg#kz_taurus') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+html{
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+body{
+
+	background-color: #fff;
+
+}
+body.fixed{
+	overflow-y: hidden;
+}
+
+html,
+body{
+	height: 100%;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+}
+
+ul,
+li {
+	margin:0;
+	padding: 0;
+	list-style: none;
+
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top:17px;
+}
+.header__inner-logo{
+	padding-left: 120px;
+	
+}
+.menu-list{
+	font-family: 'Asap', sans-serif;
+	font-weight: 500;
+	font-size: 17px;
+	color: #000;
+	display: flex;
+
+	li{
+		a{
+			font-family: 'Asap', sans-serif;
+			padding-left: 20px;
+			font-weight: 500px;
+			transition: 0.3s;
+			font-weight: 500;
+			&:hover{
+				text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+			}
+		}
+	}
+}
+
+.banner{
+	position: relative;
+	&:before{
+		content: '';
+		background-image: url('../images/contents/sota.svg');
+		height: 322px;
+		width: 205px;
+		position: absolute;
+		background-repeat: no-repeat;
+		left: 0;
+		z-index: 1;
+	}
+}
+.banner__inner{
+	margin-top: 18px;
+	background: linear-gradient(76.02deg, #FF9D2D 1.66%, #FFD877 93.21%);
+	border-radius: 30px;
+	padding-left: 101px;
+	position: relative;
+		&:before{
+			position: absolute;
+			background-image: url('../images/contents/banner-fonetext.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
+	
+	img{
+		position: absolute;
+		top: 100px;
+		right: 10px;
+		z-index: 1;
+	}	
+	&-title{
+		padding-top: 156px;
+		font-size: 80px;
+		font-family: 'KZ Taurus';
+		color: #0B0B0B;
+		z-index: 1;
+		
+
+		.banner__inner-title_item{
+			z-index: 1;
+		}
+		.title_item-one{
+			padding-left:50px;
+		
+		}
+		.title_item-two{
+			padding-left: 118px;
+			padding-top: 10px;
+			
+		}
+		.title_item-three{
+			
+			padding-top: 20px;
+			padding-left: 260px;
+			position: relative;
+			&:before{
+				content: '';
+				background-image: url('../images/contents/bee.png');
+				background-repeat: no-repeat;
+				width: 244px;
+				height: 129px;
+				position:absolute;
+				left: 30px;
+				top: 10px;
+			}
+		}
+	}
+	&-btn{
+		
+		padding-bottom: 110px;
+		margin-top: 34px;
+		&:first-child{
+			margin-right: 25px;
+		}
+		a{
+			z-index: 10;
+			padding-right: 38px;
+			padding-left: 38px;
+			padding-top: 17px;
+			padding-bottom: 14px;
+			font-size: 16px;
+			color: #000000;
+			font-family: 'Kodchasan', sans-serif;
+			font-weight: 700;
+			border: 2px solid #000;
+			transition: 0.3s;
+			&:hover{
+				background-color: #000;
+				color: #fff;
+			}
+		}
+
+	}
+}
+.partners__inner{
+	padding-top: 110px;
+	&-title{
+		font-size: 42px;
+		font-weight: 700;
+		font-family: 'Asap', sans-serif;
+		color: #000;
+		padding-bottom: 45px;
+		padding-left: 139px;
+	}
+	&-logs{
+		margin: 0 auto;
+		max-width: 950px;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 100px;
+		img{
+			max-height: 33px;
+			transition: 0.3s;
+			padding-right: 100PX;
+			&:last-child{
+				padding-right: 0;
+			}
+			&:hover{
+				transform: scale(1.2);
+
+			}
+		}
+	}
+}
+
+
+.natural-honey__inner,
+.testyest-honey__inner{
+	display: flex;
+}
+.natural-honey__inner-icon,
+.testyest-honey__inner-icon{
+	max-width: 715px;
+	padding-left: 46px;
+	width: 100%;
+}
+.natural-honey__inner-info__title,
+.testyest-honey__inner-info__title{
+	font-size: 37px;
+	font-family: 'KZ Taurus';
+	color: #000;
+	line-height: 55px;
+}
+.natural-honey__inner-info{
+	padding-top: 155px;
+	padding-left: 29px;
+	max-width: 420px;
+
+}
+.natural-honey__inner-info__text,
+.testyest-honey__inner-info__text{
+	font-size: 19px;
+	color: #000;
+	font-family: 'KZ Taurus';
+	font-weight: 400;
+	line-height: 30px;
+}
+.natural-honey__inner-info-btn,
+.testyest-honey__inner-info-btn{
+	background-color: #E58311;
+	text-align: center;
+	padding-top: 14px;
+	font-size: 16px;
+	color: #fff;
+	font-family: 'Kodchasan', sans-serif;
+	font-weight: 700;
+	width: 180px;
+	height: 48px;
+	margin-top: -7px;
+}
+.testyest-honey__inner-info{
+	padding-top: 255px;
+	padding-left: 50px;
+	max-width: 542px;
+}
+
+.testyest-honey__inner-icon{
+	padding-left: 0;
+	padding-right: 55px;
+	margin-top: 97px;
+}
+
+.products__inner-items__wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+	margin-left: 15px;
+	
+}
+.products__inner-item{
+	display: flex;
+	background-color: #FDF6EE;
+	padding-top: 45px;
+	max-height: 250px;
+	padding-right: 26px;
+	padding-left: 26px;
+	justify-content: center;
+
+}
+
+.products__inner-title{
+	font-size: 42px;
+	font-weight: 700;
+	font-family: 'Asap', sans-serif;
+	color: #000;
+	padding-bottom: 36px;
+	padding-left: 139px;
+	padding-top: 90px;
+}
+.products__inner-item-img{
+	height: 180px;
+}
+.products__inner-item-wrapper{
+	min-height: 234px;
+	
+}
+.products__inner-item-title{
+	font-family: 'KZ Taurus';
+	color: #000;
+	font-size: 23px;
+}
+.item_lav-text{
+	max-width: 285px;
+}
+.item_lip-text{
+	max-width: 300px;
+
+}
+.products__inner-item-text{
+	font-family: 'KZ Taurus';
+	line-height: 23px;
+	font-size: 14px;
+}
+.products__inner-item_lav{
+	margin-right: 15px;
+}
+.products__inner-item_lip{
+	margin-left: 15px;
+}
+
+.products__inner-item__link-buy_lip{
+	margin-top: 45px;
+}
+.products__inner-item__link-buy{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border: 2px solid #E58211;
+	font-size: 14px;
+	font-family: 'Kodchasan', sans-serif;
+	font-weight: 700;
+	color: #E58211 ;
+	transition: 0.3s;
+	&:hover{
+		background-color: #E58211;
+		color: #fff;
+	}
+
+}
+.products__inner-item-img_lip{
+	padding-left: 30px;
+}
+.footer{
+	background: linear-gradient(76.02deg, #FF9D2D 1.66%, #FFD877 93.21%);
+
+}
+.footer__inner{
+	margin-top: 130px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer__inner-logo{
+	margin-left: 118px;
+	padding-top:43px;
+	padding-bottom: 55px;
+}
+.footer__inner-btn_block{
+	margin-right: 79px;
+}
+.footer__inner-text{
+	font-family: 'KZ Taurus';
+	font-size: 14px;
+	color: #000;
+	max-width: 250px;
+}
+.footer__inner-btn_block{
+	.footer__btn-item{
+		margin-right: 10px;
+	}
+	.footer__btn-item{
+		margin-left: 10px;
+	}
+}
+.footer__inner-links_block{
+	a{
+		margin-right: 38px;
+	}
+}
+
+
+
+.popup{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	top: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
+	align-items: center;
+	transition: all 0.8s;
+	background-color: rgba(143, 116, 86, 0.8);
+	
+}
+
+.closebtn-popup{
+	cursor: pointer;
+}
+.popup.active{
+	overflow-y: hidden;
+	opacity: 1;
+	visibility: visible;
+
+}
+.popup__body{
+	display: flex;
+	justify-content: center;
+	align-items: center;}
+.popup__content{
+	margin-top: 180px;
+	text-align: center;
+	font-family: 'KZ Taurus';
+	background-color: #FDF6EE;
+	width: 550px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-radius: 40px;
+	border: 5px solid rgba(229, 130, 17, 1);
+	position: relative;
+	.popup__close{
+		position: absolute;
+		top: 5px;
+		right: 17px;
+		font-size: 30px;
+		color: #000;
+		opacity: 0.7;
+	}
+}
+.popup__content-title{
+	font-size: 35px;
+	padding-top:10px;
+}
+.popup__content-text{
+	max-width: 400px;
+	line-height: 28px;
+	color: #706E6C;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.popup__content-form{
+	display: flex;
+	flex-direction: column;
+	a{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 25px;
+		padding-left: 25px;
+		border-radius: 30px;
+		border: 2px solid #FCCC96;
+		max-width: 180px;
+		margin: 0 auto;
+		transition: all 0.3s;
+		&:hover{
+			background-color: rgba(229, 131, 17, 0.7);
+			color: #fff;
+
+		}
+	}
+	input{
+		border-radius: 20px;
+		background-color: #F4E7D7;
+		width: 260px;
+		margin: 0 auto;
+		outline: none;
+		padding-left: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-bottom: 17px;
+		border: 2px solid #FCCC96;
+	}
+}
+
+.burger-btn{
+	display: none;
+	cursor: pointer;
+	position: relative;
+	width: 35px;
+	height: 15px;
+	z-index: 1;
+	margin-right: 35px;
+	span{
+		background-color: rgba(255, 157, 45, 1);
+    	position: absolute;
+    	width: 100%;
+    	height: 4px;
+    	left: 0;
+ 		transition: all .3s;
+ 		border-radius: 7px;
+ 	}
+ 	&:before{
+ 		content: "";
+    	background-color: rgba(255, 157, 45, 1);
+    	position: absolute;
+    	width: 100%;
+    	height: 4px;
+    	left: 0;
+    	transition: all .3s;
+    	border-radius: 7px;
+    	top: 10px;
+ 	}
+ 	&:after{
+ 		content: "";
+    	background-color: rgba(255, 157, 45, 1);
+    	position: absolute;
+    	width: 100%;
+    	height: 4px;
+    	left: 0;
+    	transition: all .3s;
+    	border-radius: 7px;
+    	top: 20px;
+ 	}
+}
+
+.sote-first,
+.sote-second{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1265px){
+	.banner:before{
+		display: none;
+	}
+}
+@media(max-width: 1265px){
+	.menu-list{
+		margin-right: 60px;
+	}
+}
+
+@media(max-width: 1125px){
+	.banner__inner-title{
+		li{
+			padding-left: 0 !important;
+		}
+	}
+
+	.title_item-three:before{
+		display: none;
+
+
+	}
+}
+
+@media(max-width: 1080px){
+	.footer__inner{
+
+		margin: 0 auto;
+	}
+	.footer__inner-btn_block{
+		align-items: center;
+	}
+	.header__inner{
+		position: relative;
+	}
+	body.lock{
+		overflow-x: hidden;
+		overflow-y: hidden;
+
+	}
+	.menu-list__adapt{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: -100%;
+		left: 0;
+		background-color: rgba(255, 198, 96, 1);
+		display: inline-block;
+		font-size: 30px;
+		z-index: 990;
+		padding-top: 170px;
+		text-align: center;
+		transition: 0.4s;
+		li{
+			cursor: pointer;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-bottom: 7px solid rgba(255, 219, 154, 1);
+			border-radius: 2px;
+			width: 50%;
+			margin: 0 auto;
+			
+
+			a{
+				padding-left: 0  !important;
+				padding-right: 0 !important;
+				font-family: 'KZ Taurus';
+			}
+
+		}
+	}
+	.menu-list__adapt.active{
+		top:0;
+	}
+	.burger-btn{
+		display: block;
+		z-index: 998;
+		transition: 0.3s;
+
+		&.active{
+			transition: 0.3s;
+			span{
+				transform: rotate(45deg);
+				background-color: rgba(255, 244, 225, 1);
+				top: 10px;
+				
+			}
+			&:before{
+				opacity: 0;
+			}
+			&:after{
+				transform: rotate(-45deg);
+				background-color: rgba(255, 244, 225, 1);
+				top: 10px;
+				
+			}
+		}
+
+	}
+}
+
+@media(max-width: 1060px){
+	.partners__inner-logs{
+		flex-wrap: wrap;
+		justify-content: space-between;
+		grid-row-gap: 30px;
+		img{
+			margin: 0 auto;
+			padding: 0 !important;
+		}
+
+	}
+	.natural-honey__inner-icon,
+	.testyest-honey__inner-icon{
+		max-width: 505px;
+
+		width: 100%;
+	}
+	.partners__inner-title,
+	.products__inner-title{
+		padding-left: 60px;
+	}
+	.banner__wrapper{
+		.bee_bank{
+			display: none;
+		}
+		background-image: url('../images/icons/sote.png');
+		background-repeat: no-repeat;
+		background-position: center;
+
+	}
+	.banner__inner-title,
+	.banner__inner-btn{
+		text-align: center;
+	}
+	.banner__inner{
+		padding-left: 0;
+	}
+
+	.banner__inner-title{
+		padding-top: 80px;
+
+	}
+	.banner__inner-btn{
+		padding-bottom: 60px;
+		a{
+			background-color: #000;
+			color: #fff;
+		}
+		
+	}
+	.testyest-honey__inner-info{
+		padding-top: 100px !important;
+	}
+	.natural-honey__inner-info__title,
+	.testyest-honey__inner-info__title{
+		font-size: 32px !important;
+	}
+	.natural-honey__inner-info__text,
+	.testyest-honey__inner-info__text{
+		font-size: 16px;
+	}
+
+}
+
+@media(max-width: 1010px){
+	.products__inner-items__wrapper{
+		flex-direction: column;
+	}
+	.products__inner-item{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.products__inner-item_lav{
+		margin-bottom: 50px;
+	}
+	.products__inner-item-wrapper{
+	}
+}
+
+@media(max-width: 900px){
+	.natural-honey__inner{
+		flex-direction: column-reverse;
+	}
+	.testyest-honey__inner{
+		flex-direction: column;
+	}
+	.testyest-honey__inner-info,
+	.natural-honey__inner-info{
+		padding-left: 0 !important;
+	}
+	.natural-honey__inner,
+	.testyest-honey__inner{
+		text-align: center;
+		align-items: center;
+	}
+	.natural-honey__inner-info__title,
+	.testyest-honey__inner-info__title{
+		font-size: 35px !important;
+	}
+	.natural-honey__inner-info__text,
+	.testyest-honey__inner-info__text{
+		font-size: 19px;
+		max-width: 800px !important;
+		max-width: 100%;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.natural-honey__inner-info{
+		max-width: 900px !important;
+		padding-top: 50px;
+	}
+	.testyest-honey__inner-icon,
+	.natural-honey__inner-icon{
+		margin-top: 40px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+@media(max-width: 840px){
+	.header__inner-logo{
+		padding-left: 40px !important;
+	}
+
+}
+
+@media(max-width: 777px){
+	.partners__inner-title,
+	.products__inner-title{
+		padding-left: 30px;
+	}
+	.footer__inner{
+		flex-direction: column !important;
+
+	}
+	.footer__inner-text{
+		padding-bottom: 20px;
+	}
+	.footer__inner-links_block{
+		margin-bottom: 40px;
+	}
+	.footer__inner-logo{
+		margin: auto !important;
+	}
+	.footer__inner-btn_block{
+		margin-right: 0;
+	}
+	.products__inner-item_lip{
+		margin-bottom: 40px;
+	}
+
+}
+@media(max-width: 700px){
+	.banner__inner-btn{
+		margin-right: 20px;
+		margin-left: 20px;
+		display: block;	
+		width: 198px;
+		margin: auto;
+		margin-top: 20px;
+	}
+}
+@media(max-width: 600px){
+	.banner__inner-title{
+		font-size: 70px;
+	}
+	.popup__content{
+		margin-right: 30px;
+		margin-left: 30px;
+
+	}
+}
+@media(max-width: 550px){
+	.products__inner-item{
+		flex-direction: column-reverse;
+		max-height: 500px;
+		max-width: 397px;
+	}
+	
+}
+@media(max-width: 530px){
+	.natural-honey__inner-info__title,
+	.testyest-honey__inner-info__title{
+		font-size: 25px !important;
+	}
+	.natural-honey__inner-info__text,
+	.testyest-honey__inner-info__text{
+		font-size: 16px;
+		max-width: 350px !important;
+		margin: 0 auto;
+		
+	}
+	.natural-honey__inner-info-btn,
+	.testyest-honey__inner-info-btn{
+		margin-top: 20px;
+	}
+}
+@media(max-width: 500px){
+	.partners__inner-title,
+	.products__inner-title{
+		padding-left: 0;
+		font-size: 38px;
+		padding-bottom: 30px;
+		text-align: center;
+	}
+	.popup__content-text{
+		font-size: 15px;
+		width: 250px;
+	}
+	.popup__content-title{
+		font-size: 32px;
+	}
+	.popup__content{
+		margin-top: 150px;
+	}
+	.popup__content-form{
+		input{
+			width: 220px;
+		}
+	}
+}
+
+
+@media(max-width: 465px){
+	
+	.banner__inner-title{
+		font-size: 50px;
+	}
+	.partners__inner-logs{
+		flex-direction: column !important;
+		padding-bottom: 30px;
+		img{
+			margin: 0 auto;
+			padding: 0 !important;
+		}
+	}
+	.footer__inner-btn_block{
+		display: flex;
+		flex-direction: column;
+		img{
+			margin-bottom: 10px;
+		}
+	}
+	.partners__inner-logs{
+
+	}
+}
